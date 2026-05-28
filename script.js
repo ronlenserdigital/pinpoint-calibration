@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function () {
         .then(function (res) { return res.json().then(function (data) { return { ok: res.ok, data: data }; }); })
         .then(function (result) {
           if (result.ok && result.data.success) {
-            status.textContent = 'Thanks — your request was sent. We\u2019ll be in touch shortly.';
+            status.textContent = 'Thanks, your request was sent. We\u2019ll be in touch shortly.';
             status.classList.add('success');
             form.reset();
           } else {
